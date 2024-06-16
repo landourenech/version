@@ -1,0 +1,49 @@
+/* il faut ajouter le fiche roboto */
+/* @import url(); */
+@import url(hearder/hearder.css);
+@import url(main/main.css);
+@import url(footer/footer.css);
+@import url(responsive/responsive.css);
+/* l'element racine  */
+:root{
+        --roboto:"Roboto" query expected;
+
+
+
+
+    /* les variables: les routes équivauts aux composants sur figma;
+    en utilisant les 0,0,0 on peut modifier l'opacité de la couleur sans problème
+      */
+    --primary-color: 0, 0, 0;
+    --secondary-color:255, 255, 255;
+/* #code exadécimal */
+    --blue-color: 31, 132, 239;
+    --red-color:214, 10, 10, 1;
+    --yellow-color:225,210,0;
+    --greem-color:6,224, 127;
+    --viola-color:163, 7, 166, 1;
+
+    --headline-font-size:42px;
+    --mobilebheadline-font-size:37px;
+    --subheadline-font-size:22px;
+    --headline-font-weigth:700;
+    --subheadline-font-weight:400;
+
+    --body-font-size:18px;
+
+}
+
+/* Cette partie permet d'annuler les proprietés pas défauts  */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--roboto);
+}
+html, 
+body{
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
